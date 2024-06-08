@@ -92,6 +92,8 @@ var theme = {
       });
     })(bootstrap);
   },
+
+  
   /**
    * Offcanvas
    * Enables offcanvas-nav, closes offcanvas on anchor clicks, focuses on input in search offcanvas
