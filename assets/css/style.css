@@ -264,6 +264,14 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+/* Default state */
+.navbar-nav img {
+  filter: none; 
+}
+/* When the navbar is sticky */
+.navbar-stick .navbar-nav img {
+  filter: brightness(0) saturate(100%) invert(12%) sepia(24%) saturate(1731%) hue-rotate(176deg) brightness(99%) contrast(99%);
+}
 hr {
   margin: 4.5rem 0;
   color: rgba(164, 174, 198, 0.2);
