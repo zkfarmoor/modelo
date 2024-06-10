@@ -36,6 +36,7 @@ var theme = {
     theme.pricingSwitcher();
     theme.textRotator();
     theme.codeSnippet();
+    window.Jupiter();
   },
   /**
    * Sticky Header
