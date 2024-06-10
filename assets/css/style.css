@@ -273,6 +273,9 @@ body {
 .jup-swap {
   max-width: 300px !important;
 }
+.h1 .logo {
+  font-family: 'modelo';
+}
 /* Default state */
 .navbar-nav img {
   filter: none; 

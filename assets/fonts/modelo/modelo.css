@@ -1,1 +1,6 @@
-
+@font-face {
+    font-family: 'modelo';
+    src: url('./assets/fonts/modelo.woff'), url('./assets/fonts/modelo.ttf') format('truetype'), url('./assets/fonts/modelo.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}

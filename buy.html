@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/colors/purple.css">
   <link rel="preload" href="./assets/css/fonts/urbanist.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="./assets/fonts/modelo.css" as="style" onload="this.rel='stylesheet'">
   <script src='https://terminal.jup.ag/main-v2.js'></script>
 </head>
 <body>
@@ -21,8 +22,7 @@
         <nav class="navbar navbar-expand-lg center-nav transparent position-absolute navbar-dark px-md-10 px-xxl-0">
           <div class="container flex-lg-row flex-nowrap align-items-center">
             <div class="navbar-brand w-100">
-                <img class="logo-dark" src="./assets/img/M-logo-dark.svg" srcset="./assets/img/M-logo-dark.svg" alt="" />
-                <img class="logo-light" src="./assets/img/M-logo-light.svg" srcset="./assets/img/M-logo-light.svg" alt="" />
+                <h1 id="logo">M</h1>
             </div>
             <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
               <!-- /.offcanvas-body -->
@@ -50,25 +50,22 @@
             <div class="row">
               <div class="col-md-9 col-lg-8 col-xl-7 col-xxl-6 mx-auto">
                  <div id="integrated-terminal"></div>
-                   <script>
-                  const PLATFORM_SOL = {
-  referralAccount: "ATF3ZkcqwTHjSTpesv6PdjKL8bfSrcQfcRh9ACEijJtd",
-  feeBps: 100,
-};
-                              window.Jupiter.init({
-                                  displayMode: "integrated",
-                                  integratedTargetId: "integrated-terminal",
-                                  endpoint: "https://endpoints.omniatech.io/v1/sol/mainnet/1965cf967ef247b3b7ded5dee742af14",
-                                  strictTokenList: false,
-                                  formProps: {
-                                    fixedOutputMint: true,
-                                    fixedInputMint: true,
-                                    initialInputMint: "So11111111111111111111111111111111111111112",
-                                    initialOutputMint: "GGouWKkn5SvDcmKjQCTpFurGsbkM3G2WUPAGBdHupump",
-                                  },
-                                  platformFeeAndAccounts: PLATFORM_SOL,
-                                });
-                                </script>
+                <script>
+                window.Jupiter.init({
+                  displayMode: "integrated",
+                  integratedTargetId: "integrated-terminal",
+                  endpoint: "https://endpoints.omniatech.io/v1/sol/mainnet/1965cf967ef247b3b7ded5dee742af14",
+                  formProps: {
+                    fixedInputMint: true,
+                    fixedOutputMint: true,
+                    initialAmount: "690000",
+                    initialInputMint: "So11111111111111111111111111111111111111112",
+                    initialOutputMint: "GGouWKkn5SvDcmKjQCTpFurGsbkM3G2WUPAGBdHupump",
+                    initialSlippageBps: 200,
+                  },
+                  useUserSlippage: false,
+                });
+                </script>
               </div>
               <!-- /column -->
             </div>
