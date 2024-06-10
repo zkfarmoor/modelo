@@ -276,6 +276,14 @@ body {
 .h1 .logo {
   font-family: 'modelo';
 }
+.disclaimer {
+  text-align: center;
+  align-content: center;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-bottom: 25px;
+  font-size: 0.75rem;
+}
 /* Default state */
 .navbar-nav img {
   filter: none; 
