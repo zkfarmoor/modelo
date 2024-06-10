@@ -266,10 +266,13 @@ body {
 }
 .grow-hero { 
   transition: all .2s ease-in-out; 
-  }
-  .grow-hero:hover { 
+}
+.grow-hero:hover { 
   transform: scale(1.1); 
-  }
+}
+.jup-swap {
+  max-width: 300px !important;
+}
 /* Default state */
 .navbar-nav img {
   filter: none; 
