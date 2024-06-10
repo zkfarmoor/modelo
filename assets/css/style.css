@@ -24677,8 +24677,8 @@ mark {
     border-radius: 1rem;
   }
   .section-frame.br-fix {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
   .section-frame-wrapper {
     border-radius: 1rem;
