@@ -13,7 +13,6 @@
   <link rel="stylesheet" href="./assets/css/colors/purple.css">
   <link rel="preload" href="./assets/css/fonts/urbanist.css" as="style" onload="this.rel='stylesheet'">
   <script src='https://terminal.jup.ag/main-v2.js'></script>
-  <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.js"></script>
 </head>
 <body>
   <div class="py-md-6">
@@ -54,6 +53,18 @@
                 <a href="./assets/media/foo.mp4" class="btn btn-circle btn-white btn-play ripple mx-auto" data-glightbox><i class="icn-caret-right"></i></a>
               </div>
               <div id="integrated-terminal"></div>
+              <script>
+              window.Jupiter.init({
+                  displayMode: "integrated",
+                  integratedTargetId: "integrated-terminal",
+                  endpoint: "https://api.mainnet-beta.solana.com",
+                  strictTokenList: false,
+                  formProps: {
+                    fixedOutputMint: true,
+                    initialOutputMint: "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+                  },
+                });
+                </script>
               <!-- /column -->
             </div>
             <!-- /.row -->
@@ -78,6 +89,7 @@
               <h2 class="fs-16 text-uppercase text-muted mb-3">PoM (Proof of Meme) Technology</h2>
               <h3 class="display-4 mb-10 px-xxl-10">Check out some of the $MODELO memes made by the foos.</h3>
             </div>
+            <div id="integrated-terminal"></div>
             <!-- /column -->
           </div>
           <!-- /.row -->
