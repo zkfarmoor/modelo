@@ -14,36 +14,177 @@
   <link rel="preload" href="./assets/css/fonts/urbanist.css" as="style" onload="this.rel='stylesheet'">
   <script src='https://terminal.jup.ag/main-v2.js'></script>
 </head>
-<body style="background: radial-gradient(circle, rgba(32,131,195,1) 0%, rgba(15,35,65,1) 100%);">
-    <div class="py-md-6">
-        <div class="content-wrapper">
-          <header class="wrapper">
-            <nav class="navbar navbar-expand-lg center-nav transparent position-absolute navbar-dark px-md-10 px-xxl-0">
-              <div class="container flex-lg-row flex-nowrap align-items-center">
-                <div class="navbar-brand w-100">
-                    <img class="logo-dark" src="./assets/img/M-logo-dark.svg" srcset="./assets/img/M-logo-dark.svg" alt="" />
-                    <img class="logo-light" src="./assets/img/M-logo-light.svg" srcset="./assets/img/M-logo-light.svg" alt="" />
-                </div>
-                <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
-                  <!-- /.offcanvas-body -->
-                </div>
-                <!-- /.navbar-collapse -->
-                <div class="navbar-other w-100 d-flex ms-auto">
-                  <ul class="navbar-nav flex-row align-items-center ms-auto">
-                    <li class="nav-item"><a href="https://x.com/ModeloOnSolana"; target="_blank"; class="nav-link"><img style="width: 30px; height:30px;" src="./assets/img/icons/x-icon.png"></img></a></li>
-                    <li class="nav-item"><a href="https://t.me/+yrtI2N7dj0YzODVk"; target="_blank"; class="nav-link"><img style="width: 30px; height:30px;" src="./assets/img/icons/tg-icon.png"></img></a></li>
-                    <li class="nav-item"><a href="https://birdeye.so/token/GGouWKkn5SvDcmKjQCTpFurGsbkM3G2WUPAGBdHupump?chain=solana"; target="_blank"; class="nav-link"><img style="width: 30px; height:30px;" src="./assets/img/icons/birdeye-icon.png"></img></a></li>
-                    <li class="nav-item"><a href="https://jup.ag/swap/SOL-GGouWKkn5SvDcmKjQCTpFurGsbkM3G2WUPAGBdHupump"; target="_blank"; class="nav-link"><img style="width: 30px; height:30px;" src="./assets/img/icons/jup-icon.png"></img></a></li>
-                  </ul>
-                  <!-- /.navbar-nav -->
-                </div>
-                <!-- /.navbar-other -->
+<body>
+  <div class="py-md-6">
+    <div class="content-wrapper">
+      <header class="wrapper">
+        <nav class="navbar navbar-expand-lg center-nav transparent position-absolute navbar-dark px-md-10 px-xxl-0">
+          <div class="container flex-lg-row flex-nowrap align-items-center">
+            <div class="navbar-brand w-100">
+                <img class="logo-dark" src="./assets/img/M-logo-dark.svg" srcset="./assets/img/M-logo-dark.svg" alt="" />
+                <img class="logo-light" src="./assets/img/M-logo-light.svg" srcset="./assets/img/M-logo-light.svg" alt="" />
+            </div>
+            <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+              <!-- /.offcanvas-body -->
+            </div>
+            <!-- /.navbar-collapse -->
+            <div class="navbar-other w-100 d-flex ms-auto">
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <li class="nav-item"><a href="https://x.com/ModeloOnSolana"; target="_blank"; class="nav-link"><img style="width: 30px; height:30px;" src="./assets/img/icons/x-icon.png"></img></a></li>
+                <li class="nav-item"><a href="https://t.me/+yrtI2N7dj0YzODVk"; target="_blank"; class="nav-link"><img style="width: 30px; height:30px;" src="./assets/img/icons/tg-icon.png"></img></a></li>
+                <li class="nav-item"><a href="https://birdeye.so/token/GGouWKkn5SvDcmKjQCTpFurGsbkM3G2WUPAGBdHupump?chain=solana"; target="_blank"; class="nav-link"><img style="width: 30px; height:30px;" src="./assets/img/icons/birdeye-icon.png"></img></a></li>
+                <li class="nav-item"><a href="https://jup.ag/swap/SOL-GGouWKkn5SvDcmKjQCTpFurGsbkM3G2WUPAGBdHupump"; target="_blank"; class="nav-link"><img style="width: 30px; height:30px;" src="./assets/img/icons/jup-icon.png"></img></a></li>
+              </ul>
+              <!-- /.navbar-nav -->
+            </div>
+            <!-- /.navbar-other -->
+          </div>
+          <!-- /.container -->
+        </nav>
+        <!-- /.navbar -->
+      </header>
+      <!-- /header -->
+      <section class="section-frame br-fix overflow-hidden">
+        <div class="wrapper image-wrapper bg-cover bg-image bg-overlay bg-overlay-500" style="background-color: #2083c3;">
+          <div class="container pt-18 pt-lg-21 pb-17 pb-lg-19 text-center">
+            <div class="row">
+              <div class="col-md-9 col-lg-8 col-xl-7 col-xxl-6 mx-auto" data-cues="zoomIn" data-group="page-title" data-interval="-200" data-delay="500">
+                 <div id="integrated-terminal"></div>
+                   <script>
+                  const PLATFORM_SOL = {
+  referralAccount: "ATF3ZkcqwTHjSTpesv6PdjKL8bfSrcQfcRh9ACEijJtd",
+  feeBps: 100,
+};
+                              window.Jupiter.init({
+                                  displayMode: "integrated",
+                                  integratedTargetId: "integrated-terminal",
+                                  endpoint: "https://api.mainnet-beta.solana.com",
+                                  strictTokenList: false,
+                                  formProps: {
+                                    fixedOutputMint: true,
+                                    initialOutputMint: "GGouWKkn5SvDcmKjQCTpFurGsbkM3G2WUPAGBdHupump",
+                                  },
+                                  platformFeeAndAccounts: PLATFORM_SOL,
+                                });
+                                </script>
               </div>
-              <!-- /.container -->
-            </nav>
-            <!-- /.navbar -->
-          </header>
-          <!-- /header -->
+              <!-- /column -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.wrapper -->
+      </section>
+      <!--/section -->
+      <section class="wrapper bg-light">
+        <div class="container py-15 py-md-17">
+          <div class="row">
+            <div class="col-lg-10 col-xl-8 mx-auto text-center">
+              <h2 class="fs-16 text-uppercase text-muted mb-3">PoM (Proof of Meme) Technology</h2>
+              <h3 class="display-4 mb-10 px-xxl-10">Check out some of the $MODELO memes made by the foos.</h3>
+            </div>
+            <!-- /column -->
+          </div>
+          <!-- /.row -->
+          <div class="swiper-container grid-view mb-19" data-margin="30" data-dots="true" data-items-xl="3" data-items-md="2" data-items-xs="1">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <figure class="rounded mb-6"><img src="./assets/img/meme1.png" srcset="./assets/img/meme1.png 2x" alt="" /><a class="item-link" href="./assets/img/meme1.png" data-glightbox data-gallery="projects-group"><i class="uil uil-focus-add"></i></a></figure>
+                </div>
+                <!--/.swiper-slide -->
+                <div class="swiper-slide">
+                  <figure class="rounded mb-6"><img src="./assets/img/meme2.png" srcset="./assets/img/meme2.png 2x" alt="" /><a class="item-link" href="./assets/img/meme2.png" data-glightbox data-gallery="projects-group"><i class="uil uil-focus-add"></i></a></figure>
+                </div>
+                <!--/.swiper-slide -->
+                <div class="swiper-slide">
+                  <figure class="rounded mb-6"><img src="./assets/img/meme3.jpg" srcset="./assets/img/meme3.jpg 2x" alt="" /><a class="item-link" href="./assets/img/meme3.jpg" data-glightbox data-gallery="projects-group"><i class="uil uil-focus-add"></i></a></figure>
+                </div>
+                <!--/.swiper-slide -->
+                <div class="swiper-slide">
+                  <figure class="rounded mb-6"><img src="./assets/img/meme4.png" srcset="./assets/img/meme4.png 2x" alt="" /><a class="item-link" href="./assets/img/meme4.png" data-glightbox data-gallery="projects-group"><i class="uil uil-focus-add"></i></a></figure>
+                </div>
+                <!--/.swiper-slide -->
+                <div class="swiper-slide">
+                  <figure class="rounded mb-6"><img src="./assets/img/meme5.png" srcset="./assets/img/meme5.png 2x" alt="" /><a class="item-link" href="./assets/img/meme5.png" data-glightbox data-gallery="projects-group"><i class="uil uil-focus-add"></i></a></figure>
+                </div>
+                <!--/.swiper-slide -->
+                <div class="swiper-slide">
+                  <figure class="rounded mb-6"><img src="./assets/img/meme6.jpg" srcset="./assets/img/meme6.jpg 2x" alt="" /><a class="item-link" href="./assets/img/meme6.jpg" data-glightbox data-gallery="projects-group"><i class="uil uil-focus-add"></i></a></figure>
+                </div>
+                <!--/.swiper-slide -->
+                <div class="swiper-slide">
+                  <figure class="rounded mb-6"><img src="./assets/img/meme7.png" srcset="./assets/img/meme7.png 2x" alt="" /><a class="item-link" href="./assets/img/meme7.png" data-glightbox data-gallery="projects-group"><i class="uil uil-focus-add"></i></a></figure>
+                </div>
+                <!--/.swiper-slide -->
+                <div class="swiper-slide">
+                  <figure class="rounded mb-6"><img src="./assets/img/meme8.png" srcset="./assets/img/meme8.png 2x" alt="" /><a class="item-link" href="./assets/img/meme8.png" data-glightbox data-gallery="projects-group"><i class="uil uil-focus-add"></i></a></figure>
+                </div>
+                <!--/.swiper-slide -->
+              </div>
+              <!--/.swiper-wrapper -->
+            </div>
+            <!-- /.swiper -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /section -->
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="bg-dark section-frame">
+      <div class="container pb-13 pb-md-15">
+        <div class="card image-wrapper bg-full bg-image bg-overlay mt-n50p mx-md-5">
+          <div class="card-body p-6 p-md-11 d-lg-flex flex-row align-items-lg-center justify-content-md-between text-center text-lg-start">
+            <h3 class="display-4 mb-6 mb-lg-0 pe-lg-10 pe-xl-5 pe-xxl-18 text-white">Join the community of $MODELO foos.</h3>
+            <a href="./buy.html"; target="_blank"; class="btn btn-lg btn-white rounded mb-0 text-nowrap">Buy Now</a>
+          </div>
+          <!--/.card-body -->
+        </div>
+        <!--/.card -->
+        <div class="swiper-container grid-view mb-19" data-margin="30" data-dots="true" data-items-xl="3" data-items-md="2" data-items-xs="1">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr"><a href="https://twitter.com/search?q=%24MODELO&amp;src=ctag&amp;ref_src=twsrc%5Etfw">$MODELO</a> coded🍺 <a href="https://twitter.com/TheRoaringKitty?ref_src=twsrc%5Etfw">@TheRoaringKitty</a> <a href="https://t.co/vJIr8bXtM4">pic.twitter.com/vJIr8bXtM4</a></p>&mdash; Modelo (@ModeloOnSolana) <a href="https://twitter.com/ModeloOnSolana/status/1799119650908684405?ref_src=twsrc%5Etfw">June 7, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+              <!--/.swiper-slide -->
+              <div class="swiper-slide">
+                <blockquote class="twitter-tweet" data-conversation="none" data-dnt="true"><p lang="qme" dir="ltr">✅ <a href="https://t.co/edcjZISO06">pic.twitter.com/edcjZISO06</a></p>&mdash; Ansem 🐂🀄️ (@blknoiz06) <a href="https://twitter.com/blknoiz06/status/1170187886353952768?ref_src=twsrc%5Etfw">September 7, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+              <!--/.swiper-slide -->
+              <div class="swiper-slide">
+                <blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">MODELO ROADMAP:<br><br>1). make chart go up<br><br>2). on board alcoholics<br><br>3). collectively blackout together on chain<br><br>retardio.</p>&mdash; DRT 🐂 (@pepeDRT) <a href="https://twitter.com/pepeDRT/status/1798476802513416684?ref_src=twsrc%5Etfw">June 5, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+              <!--/.swiper-slide -->
+              <div class="swiper-slide">
+                <blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">the thesis is simple: <a href="https://twitter.com/search?q=%24MODELO&amp;src=ctag&amp;ref_src=twsrc%5Etfw">$MODELO</a> time foo <a href="https://t.co/SCOtlLeUfe">pic.twitter.com/SCOtlLeUfe</a></p>&mdash; ogmoonboi (🖤,🤍) (@ogmoonboi) <a href="https://twitter.com/ogmoonboi/status/1798563928781516831?ref_src=twsrc%5Etfw">June 6, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+              <!--/.swiper-slide -->
+              <div class="swiper-slide">
+                <blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr"><a href="https://twitter.com/search?q=%24modelo&amp;src=ctag&amp;ref_src=twsrc%5Etfw">$modelo</a> time for LCC<br><br>LCC is initsting coverage with zero diligence. Top beer in USA. Brewed with fighting spirit. Worth at least 69m<br><br>Cc: <a href="https://twitter.com/LeftCurveQuant?ref_src=twsrc%5Etfw">@LeftCurveQuant</a> <a href="https://t.co/9bxBf7h4g7">pic.twitter.com/9bxBf7h4g7</a></p>&mdash; CharteredFinancialAutist (@LeftCurveCFA) <a href="https://twitter.com/LeftCurveCFA/status/1798861963486703661?ref_src=twsrc%5Etfw">June 6, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+              <!--/.swiper-slide -->
+              <div class="swiper-slide">
+                <blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">Modelo arc about to be crazy fr <a href="https://t.co/rbfqlnnrCv">https://t.co/rbfqlnnrCv</a></p>&mdash; L̶a̶z̶u̶l̶ (@lazulcapital) <a href="https://twitter.com/lazulcapital/status/1798777695914037739?ref_src=twsrc%5Etfw">June 6, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+              <!--/.swiper-slide -->
+            </div>
+            <!--/.swiper-wrapper -->
+          </div>
+          <!-- /.swiper -->
+        </div>
+      </div>
+      <!-- /.container -->
+    </footer>
+  </div>
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+  </div>
   <script src="./assets/js/plugins.js"></script>
   <script src="./assets/js/theme.js"></script>
 </body>
