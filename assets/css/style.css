@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*!
-Theme Name: Sandbox - Modern & Multipurpose Bootstrap 5 Template
-Theme URI:	https://sandbox.elemisthemes.com/
-Version:	3.4.1
-Author:		elemis
+Theme Name: Modelo Theme 1
+Theme URI:	#
+Version:	1.0
+Author:		@ogmoonboi
 */
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700");
 :root,
@@ -263,6 +263,15 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+@font-face {
+  font-family: 'Lido STF CE';
+  src: local('Lido STF CE'), local('LidoSTFCE'),
+      url('LidoSTFCE.woff2') format('woff2'),
+      url('LidoSTFCE.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 .grow-hero { 
   transition: all .2s ease-in-out; 
