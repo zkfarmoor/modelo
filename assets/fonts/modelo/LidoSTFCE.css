@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Lido STF CE';
+    src: local('Lido STF CE'), local('LidoSTFCE'),
+        url('/assets/fonts/modelo/LidoSTFCE.woff2') format('woff2'),
+        url('/assets/fonts/modelo/LidoSTFCE.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
