@@ -288,7 +288,7 @@ body {
 .jupiter-terminal {
   overflow: hidden !important;
 }
-h1 .M-logo {
+h1, M-logo {
   font-family: 'Lido STF CE' !important;
 }
 .disclaimer {
@@ -24703,8 +24703,8 @@ mark {
     border-radius: 1rem;
   }
   .section-frame.br-fix {
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
   }
   .section-frame-wrapper {
     border-radius: 1rem;
