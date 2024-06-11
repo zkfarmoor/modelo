@@ -273,6 +273,12 @@ body {
 .jup-swap {
   max-width: 300px !important;
 }
+#integrated-terminal {
+  overflow: hidden !important;
+}
+.jupiter-terminal {
+  overflow: hidden !important;
+}
 .h1 .logo {
   font-family: 'modelo';
 }
