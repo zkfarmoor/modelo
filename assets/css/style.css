@@ -267,8 +267,8 @@ body {
 @font-face {
   font-family: 'Lido STF CE';
   src: local('Lido STF CE'), local('LidoSTFCE'),
-      url('LidoSTFCE.woff2') format('woff2'),
-      url('LidoSTFCE.woff') format('woff');
+      url('/assets/fonts/modelo/LidoSTFCE.woff2') format('woff2'),
+      url('/assets/fonts/modelo/LidoSTFCE.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -288,8 +288,8 @@ body {
 .jupiter-terminal {
   overflow: hidden !important;
 }
-.h1 .logo {
-  font-family: 'modelo';
+h1 .M-logo {
+  font-family: 'Lido STF CE' !important;
 }
 .disclaimer {
   text-align: center;
